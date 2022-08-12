@@ -33,9 +33,13 @@
           <nav class="navigation">
             <a class="link web-title" href=""><span class="web-half">Web</span>Studio</a>
             <ul class="navigation-list list">
-              <li><a class="link" href="./index.html">Студия</a></li>
-              <li><a class="link" href="./portfolio.html">Портфолио</a></li>
-              <li><a class="link" href="">Контакты</a></li>
+              <li class="navigation-item">
+                <a class="link" href="./index.html">Студия</a>
+              </li>
+              <li class="navigation-item">
+                <a class="link current" href="./portfolio.html">Портфолио</a>
+              </li>
+              <li class="navigation-item"><a class="link" href="">Контакты</a></li>
             </ul>
           </nav>
           <ul class="top-contacts list">
@@ -71,7 +75,16 @@
           <ul class="portfolio-list list">
             <li class="li-box">
               <a class="link portfolio-list-item" href="">
-                <img src="./images/portfolio1.jpg" alt="Веб-сайт1" />
+                <div class="overlay-box">
+                  <img src="./images/portfolio1.jpg" alt="Веб-сайт1" />
+                  <div class="overlay-porfolio">
+                    <p class="overlay-description">
+                      Ресурс предлагает комплексные предложения с разным уровнем функционала и
+                      сервисов. Все это позволит посетителю получить исчерпывающие сведения о
+                      компании или частном лице.
+                    </p>
+                  </div>
+                </div>
                 <div class="img-description-box">
                   <h3 class="portfolio-item-title">Технокряк</h3>
                   <p class="portfolio-item-description">Веб-сайт</p>
