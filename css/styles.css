@@ -337,9 +337,6 @@ main {
   gap: 10px;
 }
 
-.workers-soc-item {
-}
-
 .workers-soc-link {
   display: flex;
   justify-content: center;
@@ -478,8 +475,6 @@ main {
   gap: 10px;
 }
 
-.site-soc-item {
-}
 .site-soc-link {
   display: flex;
   justify-content: center;
@@ -495,9 +490,6 @@ main {
 .site-soc-link:focus {
   background-color: var(--first-color);
   fill: #ffffff;
-}
-
-.site-soc-icon {
 }
 
 /*---------------PORTFOLIO-MAIN---------------*/
@@ -621,3 +613,53 @@ button:focus {
   padding-top: 24px;
   padding-bottom: 20px;
 }
+
+.backdrop {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(48, 48, 48, 0.5);
+  transition: opacity 250ms linear, visibility 250ms;
+}
+
+.modal {
+  position: absolute;
+  width: 500px;
+  min-height: 600px;
+  background-color: #ffffff;
+  border-radius: 10px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(1);
+  transition: transform 250ms;
+}
+
+.backdrop.is-hidden .modal {
+transform: translate(-50%, -50%) scale(0);
+}
+
+.modal-close {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  width: 30px;
+  height: 30px;
+  border: 1px solid #909090;
+  border-radius: 50%;
+  background-color: transparent;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.is-hidden {
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+}
+
+.no-scroll {
+  overflow: hidden;
+}
+
